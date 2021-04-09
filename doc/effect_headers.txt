@@ -1,0 +1,59 @@
+.. _effects:
+
+Implemented Effects
+===================
+
+Below are descriptions for each of the effects included in REBOUNDx.
+Different implementations for the same effect are grouped together.
+All effects follow the same recipes for usage, see the Python quick-start guide (:ref:`python_qs`) or C quick-start guide (:ref:`c_qs`).
+Probably the quickest way to get up and running is to edit one of the linked examples for the effect you're interested in.
+
+$$$$$$$$$$$$
+Orbit Modifications
+^^^^^^^^^^^^^^^^^^^
+REBOUNDx offers two ways of modifying orbital elements (semimajor axis/eccentricity/inclination damping, precession, etc.)
+In both cases, each particle is assigned evolution timescales for each orbital element.  
+Positive timescales correspond to growth / progression, negative timescales correspond to damping / regression.  
+Semimajor axes, eccentricities and inclinations grow / damp exponentially.  
+Pericenters and nodes progress/regress linearly.
+
+$$$$$$$$$$$$
+General Relativity
+^^^^^^^^^^^^^^^^^^
+
+$$$$$$$$$$$$
+Radiation Forces
+^^^^^^^^^^^^^^^^
+
+$$$$$$$$$$$$
+Mass Modifications
+^^^^^^^^^^^^^^^^^^
+
+$$$$$$$$$$$$
+Tides
+^^^^^^^^^^^^^^^^^^
+
+$$$$$$$$$$$$
+Central Force
+^^^^^^^^^^^^^^^^^^
+
+$$$$$$$$$$$$
+Gravity Fields
+^^^^^^^^^^^^^^^^^^
+
+$$$$$$$$$$$$$$$$$$$$
+Integration Steppers
+^^^^^^^^^^^^^^^^^^^^
+
+These are wrapper functions to taking steps with several of REBOUND's integrators in order to build custom splitting schemes.
+
+$$$$$$$$$$$$$$$$$$$$$$$
+Parameter Interpolation
+^^^^^^^^^^^^^^^^^^^^^^^
+
+This isn't an effect that's loaded like the others, but an object that facilitates machine-independent interpolation of parameters that can be shared by both the C and Python versions. See the examples below for how to use them.
+
+$$$$$$$$$$$$
+Miscellaneous Utilities
+^^^^^^^^^^^^^^^^^^^^^^^
+
